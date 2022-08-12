@@ -1,0 +1,24 @@
+
+
+<div class="jumbotron">
+  <h1 class="display-4"><%= @recipe.name %>
+                        <%= @recipe.description %>
+  </h1> <br/> <br/>
+  <%= link_to 'Edit', edit_recipe_path(@recipe), class: "btn btn-secondary" %>
+
+  <%= link_to 'Back', recipes_path, class: "btn btn-dark" %>
+</div>
+<h3>Ingredients</h3>
+<ul>
+    <% for @ingredient in @recipe.ingredients %>
+        <li><%= @ingredient.content %></li>
+
+    <% end %>
+</ul>
+
+<h3>Steps</h3>
+<ol>
+  <% for @step in @recipe.steps %>
+    <li><%= @step.direction %></li>
+  <% end %> 
+</ol>
