@@ -1,8 +1,14 @@
 
+<% if @recipe.image? %>
+
+<%= image_tag @recipe.image.url, class: "recipe-show" %>
+
+<% end %>
+
 
 <div class="jumbotron">
   <h1 class="display-4"><%= @recipe.name %>
-                        <%= @recipe.description %>
+                       <h5><%= @recipe.description %></h5>
   </h1> <br/> <br/>
   <%= link_to 'Edit', edit_recipe_path(@recipe), class: "btn btn-secondary" %>
 

@@ -15,6 +15,8 @@ gem 'devise', '~> 4.8', '>= 4.8.1'
 gem 'cocoon'
 gem 'jquery-rails', '~> 4.5'
 gem 'bootstrap-sass'
+gem 'carrierwave', '~> 1.0'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
