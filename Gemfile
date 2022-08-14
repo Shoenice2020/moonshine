@@ -15,6 +15,7 @@ gem 'cocoon'
 gem 'jquery-rails', '~> 4.5'
 gem 'bootstrap-sass'
 gem 'carrierwave', '~> 1.0'
+gem 'fog-aws'
 
 
 group :development, :test do
