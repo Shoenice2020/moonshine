@@ -9,7 +9,7 @@
       <%= link_to (image_tag recipe.image.url, class: "recipe-index"), recipe %>
       <% end %> 
       <ul>
-        <l1><%= link_to recipe.name, recipe %></l1>
+        <h4> <l1><%= recipe.name %></l1> </h4> 
         <li><%= recipe.description %></li>
         <li><%= button_to 'Delete', recipe, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm" %></li>
       </ul>
